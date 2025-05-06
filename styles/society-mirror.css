@@ -264,7 +264,7 @@ footer p {
   transform: translateY(0);
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .text-section {
     font-size: 0.6rem;
     padding: auto;
