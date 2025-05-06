@@ -51,7 +51,7 @@ header h1 {
 }
 
 header p {
-  color: #aaa;
+  color: #e0dcdc;
 }
 
 
@@ -285,7 +285,7 @@ footer p {
   }
   
   header p {
-    color: #aaa;
+      color: #e0dcdc;
     font-size: small;
   }
 }
