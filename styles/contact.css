@@ -1,4 +1,5 @@
 /* General Reset */
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
@@ -7,11 +8,10 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
   color: #222;
-  background: #fefefe;
+  background-color: #fafafa;
+  line-height: 1.7;
   overflow-x: hidden;
-  padding: 0 4px;
 }
 
 a {
@@ -49,7 +49,7 @@ nav a:hover {
   text-align: center;
   position: relative;
   z-index: 1;
-  font-size: larger;
+  font-size: large;
 }
 
 .contact-hero {
@@ -152,6 +152,7 @@ button:hover {
 
 .social-icons a:hover {
   background: white;
+  color: black;
 }
 
 .bottom-links {
