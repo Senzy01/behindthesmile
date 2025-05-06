@@ -83,10 +83,15 @@ header {
 }
 
 .text-section {
-  flex: 1 1 280px;
-  min-width: 250px;
+  flex: 1;
+  min-width: 280px;
   font-size: 1rem;
   line-height: 1.6;
+  display: flex;
+  text-align: justify;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
 }
 
 .section h2 {
@@ -269,12 +274,13 @@ footer p {
   }
 
   .images {
-    max-width: 70%;
+    max-width: 100%;
     margin-bottom: 10px;
   }
 
   .text-section {
-    font-size: 0.95em;
+    font-size: 0.64em;
+    line-height: 1.3;
   }
 
   header h1 {
@@ -302,8 +308,13 @@ footer p {
   }
 
   .images {
-    max-width: 70%;
+    max-width: 100%;
     margin-bottom: 10px;
+  }
+
+  .text-section {
+       font-size: 0.64em;
+       line-height: 1.2;
   }
 
 
