@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Behind the Smile</title>
+  <link rel="stylesheet" href="styles/Behind the smile.css" />
+  <script src="script/behind-the-smile.js"></script>
+</head>
+<body>
+  <header class="hero" style="background-image: url(images/rachel-mcdermott-0fN7Fxv1eWA-unsplash.jpg);">
+    <div class="hero-text">
+      <h1>Behind the Smile</h1>
+      <p class="tagline" id="tagline"></p>
+      <a href="society-mirror.html" class="cta-btn">Read Society Mirror</a>
+    </div>
+  </header>
+
+  <main class="intro-section">
+    <section>
+      <h2>Welcome</h2>
+      <p>
+        This platform is a mirror to the world we live in — the hidden, the harsh, the honest. 
+        Here, we reflect on truths people avoid and speak about feelings we’re taught to bury.
+        <br/><br/>
+        Behind the Smile is more than a name — it’s a journey through pain, survival, injustice, faith, and raw human emotion.
+      </p>
+    </section>
+
+    <section class="grid-preview">
+      <div class="preview-box">
+        <h3>Society Mirror</h3>
+        <p>A bold look at the quiet oppression around us — masks, money, and morality.</p>
+        <a href="society-mirror.html">Read</a>
+      </div>
+      <div class="preview-box">
+        <h3>More Coming Soon</h3>
+        <p>We're not done peeling back the layers. Stay tuned for new reflections and untold truths.</p>
+      </div>
+    </section>
+  </main>
+
+   <!-- Footer -->
+<footer>
+  <p>&copy; 2025 Adeshina Attoe. All rights reserved.</p>
+  <div class="social-icons">
+      <a href="mailto:angelsenzy12@gmail.com" title="Gmail">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" alt="Gmail">
+      </a>
+      <a href="https://snapchat.com/t/cda68Rj9 " target="_blank" title="Snapchat">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/snapchat.svg" alt="Snapchat">
+      </a>
+      <a href="https://x.com/senzywf?s=21 " target="_blank" title="X (Twitter)">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/x.svg" alt="Twitter">
+        </a>
+</footer>
+
+<script>
+  const taglines = [
+    "Not every smile means happiness. Some are just shields.",
+    "Sometimes the loudest laugh hides the deepest pain.",
+    "Behind every smile, there could be a storm of silence.",
+    "A well-dressed soul may still be falling apart inside.",
+    "They smile so they don’t have to explain the ache.",
+    "The brightest eyes have cried the most tears.",
+    "Sometimes the happiest faces hide the most broken souls.",
+    "The brightest eyes have cried the deepest tears.",
+    "Pain doesn’t always scream — sometimes, it smiles.",
+    "Behind every 'I’m fine' is a story untold.",
+    "A smile is easier than explaining why you’re hurting.",
+    "Some smiles are stitched from survival, not joy."
+  ];
+
+  let currentIndex = 0;
+  const taglineElement = document.getElementById('tagline');
+
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % taglines.length;
+    taglineElement.textContent = taglines[currentIndex];
+  }, 5000); // Change every 60,000 ms = 5 seconds
+</script>
+
+</body>
+</html>

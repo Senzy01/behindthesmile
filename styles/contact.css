@@ -1,0 +1,249 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background: #fefefe;
+  overflow-x: hidden;
+  padding: 0 4px;
+}
+
+a {
+  color: wheat;
+  text-decoration: none;
+}
+
+/* Navigation */
+nav {
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+.main-nav {
+  background: black;
+  color: white;
+  padding: 15px 10px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  font-size: larger;
+}
+
+.contact-hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+  gap: 20px;
+  background: white;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.contact-intro {
+  flex: 1;
+  min-width: 260px;
+  margin-left: 5px;
+}
+
+.contact-intro h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.contact-intro p {
+  font-size: 1.1rem;
+  color: black;
+  font-weight: 700;
+}
+
+.contact-form-section {
+  padding: 30px;
+  background-color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea, select {
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #222;
+  color: white;
+  font-size: 1rem;
+}
+
+button {
+  padding: 15px;
+  background-color: #222;
+  color: black;
+  font-weight: 500;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.rating {
+  color: black;
+  font-weight: 600;
+  font-style: italic;
+  font-stretch: normal;
+}
+
+button:hover {
+  background: white;
+  color: black;
+}
+
+.contact-socials {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: #111;
+  color: #fefefe;
+}
+
+.social-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.social-icons a {
+  background: #fefefe;
+  background: #222;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background 0.3s;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  background: white;
+}
+
+.bottom-links {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-top: 1px solid #333;
+  margin: 12px;
+}
+
+.btn-link {
+  background-color: white;
+  color: #000;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn-link:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Mobile Responsiveness (600px and below) */
+@media (max-width: 600px) {
+  nav {
+    padding: 0.6rem 0.8rem;
+  }
+
+  nav ul {
+    gap: 0.8rem;
+  }
+
+  .contact-hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .contact-intro {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  input, textarea, select {
+    width: 100%;
+    padding: 12px;
+  }
+
+  button {
+    padding: 12px 20px;
+  }
+
+  .contact-socials {
+    padding: 20px;
+  }
+
+  .social-icons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .bottom-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-link {
+    width: 90%;
+    font-size: 14px;
+    padding: 12px;
+  }
+}
+
+/* Additional small screen adjustments (for 400px and below) */
+@media (max-width: 400px) {
+  .contact-intro h1 {
+    font-size: 1.6rem; /* Make header text smaller on very small screens */
+  }
+
+  .contact-intro p {
+    font-size: 1rem; /* Adjust paragraph size for smaller screens */
+  }
+
+  .rating {
+    font-size: 1rem; /* Adjust rating size */
+  }
+
+  .btn-link {
+    width: 100%; /* Button full width for small screens */
+  }
+}
