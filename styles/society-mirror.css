@@ -40,7 +40,7 @@ nav a:hover {
 header {
   background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
   color: white;
-  padding: 15px 10px;
+  padding: 1px 1px;
   text-align: center;
   position: relative;
   z-index: 1;
@@ -90,7 +90,7 @@ header {
 }
 
 .section h2 {
-  font-size: 2.2rem;
+  font-size: 2.6rem;
   color: #444;
   text-align: center;
   width: 100%;
@@ -215,7 +215,7 @@ footer {
   background-color: #000;
   color: #fff;
   text-align: center;
-  padding: 5px 5px;
+  padding: 1px 0px;
   font-size: 0.95em;
 }
 
@@ -226,19 +226,21 @@ footer a {
 }
 
 footer p {
-  margin-bottom: 20px;
+  font-size: smaller;
+  margin-top: 5px;
 }
 
 .social-icons {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 10px;
+  margin-left: 50px;
 }
 
 .social-icons a img {
-  width: 30px;
+  width: 20px;
   height: 30px;
-  filter: invert(1);
+  filter: invert(1); /* Makes the icon white */
   transition: transform 0.3s ease;
 }
 
@@ -267,8 +269,8 @@ footer p {
   }
 
   .images {
-    max-width: 100%;
-    margin-bottom: 20px;
+    max-width: 70%;
+    margin-bottom: 10px;
   }
 
   .text-section {
@@ -276,7 +278,7 @@ footer p {
   }
 
   header h1 {
-    font-size: 2em;
+    font-size: 1em;
   }
 
   .rainbow-text {
@@ -296,18 +298,24 @@ footer p {
 
 @media (max-width: 480px) {
   .section {
-    padding: 30px 10px;
+    padding: 15px 5px;
   }
 
-  .section p, .section h2, .books ul {
+  .images {
+    max-width: 70%;
+    margin-bottom: 10px;
+  }
+
+
+  .section p, .header h1, .books ul {
     font-size: 0.95em;
   }
 
-  header h1 {
-    font-size: 1.7em;
+  .section h2 {
+    font-size: 1.1em;
   }
 
   .rainbow-text {
-    font-size: 1.8em;
+    font-size: 1.3em;
   }
 }
