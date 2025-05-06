@@ -63,20 +63,3 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       }
   });
 });
-
-  // for contact
-  document.getElementById('contactForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-  
-    const name = document.getElementById('name').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const message = document.getElementById('message').value.trim();
-    const review = document.getElementById('review').value.trim();
-    const rating = document.getElementById('rating').value;
-  
-    const mailto = `mailto:angelsenzy12@gmail.com?subject=New Contact from ${name}&body=
-  Name: ${name}%0DEmail: ${email}%0DMessage: ${message}%0DReview: ${review}%0DRating: ${rating}`;
-  
-    window.location.href = mailto;
-  });
-  
