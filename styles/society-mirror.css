@@ -20,7 +20,7 @@ nav {
 }
 
 nav a {
-  color: rgb(19, 18, 18);
+  color: white;
   text-decoration: none;
 }
 
@@ -38,26 +38,23 @@ nav a:hover {
 
 /* Header */
 header {
-  background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+  background: #1a1a1a;
   color: white;
-  padding: 1px 1px;
+  padding: 1rem 0;
   text-align: center;
-  position: relative;
-  z-index: 1;
-  font-size: large;
 }
 
-@keyframes rainbow-text {
-  0% { color: red; }
-  12% { color: orange; }
-  24% { color: yellow; }
-  36% { color: green; }
-  48% { color: blue; }
-  60% { color: indigo; }
-  72% { color: violet; }
-  84% { color: pink; }
-  100% { color: red; }
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: #f4f4f4;
 }
+
+header p {
+  color: #aaa;
+}
+
+
 
 /* Sections */
 .section {
@@ -91,7 +88,7 @@ header {
   text-align: justify;
   flex-direction: column;
   justify-content: center;
-  padding: 4px;
+  padding: 2rem;
 }
 
 .section h2 {
@@ -99,6 +96,7 @@ header {
   color: #444;
   text-align: center;
   width: 100%;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
 }
 
 /* Image Styling */
@@ -177,6 +175,7 @@ header {
 .books {
   padding: 60px;
   background: #fafafa;
+  justify-content: center;
 }
 
 .books h3 {
@@ -263,72 +262,4 @@ footer p {
 .fade-in.visible {
   opacity: 1;
   transform: translateY(0);
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .section {
-    padding: 40px 20px;
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .images {
-    max-width: 100%;
-    margin-bottom: 10px;
-  }
-
-  .text-section {
-    font-size: 0.64em;
-    line-height: 1.1;
-    padding: 3px;
-  }
-
-  header h1 {
-    font-size: 1em;
-  }
-
-  .rainbow-text {
-    font-size: 2em;
-  }
-
-  .intro-quote {
-    font-size: 1.1em;
-    padding: 0 10px;
-  }
-
-  .books ul {
-    padding-left: 15px;
-    font-size: 1em;
-  }
-}
-
-@media (max-width: 480px) {
-  .section {
-    padding: 15px 5px;
-  }
-
-  .images {
-    max-width: 100%;
-    margin-bottom: 10px;
-  }
-
-  .text-section {
-       font-size: 0.6em;
-       line-height: 0.8em;
-       padding: 1px;
-  }
-
-
-  .section p, .header h1, .books ul {
-    font-size: 0.95em;
-  }
-
-  .section h2 {
-    font-size: 1.1em;
-  }
-
-  .rainbow-text {
-    font-size: 1.3em;
-  }
 }
