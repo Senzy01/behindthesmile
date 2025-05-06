@@ -134,6 +134,12 @@ footer p {
   margin-bottom: 20px;
 }
 
+footer a {
+  outline: none;
+  text-decoration: none;
+  border: none;
+}
+
 .social-icons {
   display: flex;
   justify-content: center;
