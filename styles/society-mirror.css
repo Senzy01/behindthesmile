@@ -262,17 +262,17 @@ footer p {
   }
 
   header p {
-    font-size: 0.9rem; /* Ensure header paragraph is smaller on mobile */
+    font-size: 0.4rem; /* Ensure header paragraph is smaller on mobile */
     color: #e0dcdc; /* Ensure text is white on mobile */
   }
 
   .section {
-    padding: 30px 10px; /* Reduced padding for mobile */
+    padding: 20px 10px; /* Reduced padding for mobile */
   }
 
   .text-section {
-    font-size: 0.9rem; /* Adjust text size for mobile */
-    padding: 1rem;
+    font-size: 0.5rem; /* Adjust text size for mobile */
+    padding: 0.5rem 0.3rem;
   }
 
   .images {
@@ -293,11 +293,12 @@ footer p {
 
   .section {
     flex-direction: column; /* Stack elements vertically */
+    padding: 10px 5px;
   }
 
   .text-section {
-    font-size: 1rem; /* Make text size a bit bigger for readability */
-    padding: 1.5rem;
+    font-size: 0.65rem; /* Make text size a bit bigger for readability */
+    padding: 0.5rem 0.3rem;
   }
 
   .images {
