@@ -51,7 +51,7 @@ header h1 {
 }
 
 header p {
-  color: #e0dcdc;
+  color: white;
   font-size: 1rem;  /* Ensuring consistent font size */
 }
 
@@ -82,7 +82,7 @@ header p {
   flex: 1;
   min-width: 280px;
   font-size: 0.7rem;
-  line-height: 1.4;
+  line-height: 1.1;
   display: flex;
   text-align: justify;
   flex-direction: column;
@@ -263,7 +263,7 @@ footer p {
 
   header p {
     font-size: 0.4rem; /* Ensure header paragraph is smaller on mobile */
-    color: #e0dcdc; /* Ensure text is white on mobile */
+    color: white; /* Ensure text is white on mobile */
   }
 
   .section {
@@ -271,8 +271,10 @@ footer p {
   }
 
   .text-section {
-    font-size: 0.5rem; /* Adjust text size for mobile */
-    padding: 0.5rem 0.3rem;
+    font-size: 0.1rem; /* Adjust text size for mobile */
+    padding: 0.2rem 0.2rem;
+    word-spacing: -0.15em;
+    line-height: 1.1;
   }
 
   .images {
@@ -291,14 +293,21 @@ footer p {
     font-size: 1.5rem; /* Smaller title on extra small screens */
   }
 
+  header p {
+    font-size: 0.1rem; /* Ensure header paragraph is smaller on mobile */
+    color: white; /* Ensure text is white on mobile */
+  }
+
   .section {
     flex-direction: column; /* Stack elements vertically */
     padding: 10px 5px;
   }
 
   .text-section {
-    font-size: 0.65rem; /* Make text size a bit bigger for readability */
-    padding: 0.5rem 0.3rem;
+    font-size: 0.25rem; /* Make text size a bit bigger for readability */
+    padding: 0.2rem 0.2rem;
+    word-spacing: -0.15em;
+    line-height: 1.1;
   }
 
   .images {
