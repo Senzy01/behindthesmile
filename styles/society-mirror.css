@@ -264,28 +264,59 @@ footer p {
   transform: translateY(0);
 }
 
-@media (max-width: 768px) {
-  .text-section {
-    font-size: 0.6rem;
-    padding: auto;
-    line-height: 1;
-    
+@media (max-width: 600px) {
+  /* NAVIGATION */
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
   }
-  header {
-    background: #1a1a1a;
-    color: white;
-    padding: 0%;
+
+  /* HEADER & SECTION TITLES */
+  h1 {
+    font-size: 1.5rem;
     text-align: center;
   }
-  
-  header h1 {
-    margin: 0;
+
+  h2 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  p {
     font-size: 1rem;
-    color: #f4f4f4;
+    text-align: justify;
   }
-  
-  header p {
-      color: #e0dcdc;
-    font-size: small;
+
+  /* GENERAL LAYOUT */
+  body {
+    padding: 0 1rem;
   }
+
+  /* IMAGES */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* FOOTER & SOCIAL ICONS */
+  footer {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .social-icons img {
+    width: 24px;
+    height: 24px;
+  }
+
+  /* BUTTONS (if any) */
+  button, .btn-link {
+    width: 100%;
+    font-size: 14px;
+    padding: 12px;
+    box-sizing: border-box;
+  }
 }
