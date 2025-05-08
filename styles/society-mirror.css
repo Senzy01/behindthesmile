@@ -262,7 +262,7 @@ footer p {
   }
 
   header p {
-    font-size: 0.3rem; /* Ensure header paragraph is smaller on mobile */
+    font-size: 0.6rem; /* Ensure header paragraph is smaller on mobile */
     color: white; /* Ensure text is white on mobile */
   }
 
@@ -294,7 +294,7 @@ footer p {
   }
 
   header p {
-    font-size: 0.3rem; /* Ensure header paragraph is smaller on mobile */
+    font-size: 0.6rem; /* Ensure header paragraph is smaller on mobile */
     color: white; /* Ensure text is white on mobile */
   }
 
