@@ -52,9 +52,8 @@ header h1 {
 
 header p {
   color: #e0dcdc;
+  font-size: 1rem;  /* Ensuring consistent font size */
 }
-
-
 
 /* Sections */
 .section {
@@ -252,71 +251,57 @@ footer p {
   transform: scale(1.2);
 }
 
-/* Animation */
-.fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 1.5s ease, transform 1.5s ease;
-}
-
-.fade-in.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-@media (max-width: 600px) {
-  /* NAVIGATION */
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-  }
-
-  /* HEADER & SECTION TITLES */
-  h1 {
-    font-size: 1.5rem;
-    text-align: center;
-  }
-
-  h2 {
-    font-size: 1.2rem;
-    text-align: center;
-  }
-
-  p {
-    font-size: 1rem;
-    text-align: justify;
-  }
-
-  /* GENERAL LAYOUT */
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
   body {
-    padding: 0 1rem;
+    font-size: 14px; /* Smaller text for mobile */
   }
 
-  /* IMAGES */
-  img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+  header h1 {
+    font-size: 2rem; /* Adjust header size */
   }
 
-  /* FOOTER & SOCIAL ICONS */
-  footer {
+  header p {
+    font-size: 0.9rem; /* Ensure header paragraph is smaller on mobile */
+    color: #e0dcdc; /* Ensure text is white on mobile */
+  }
+
+  .section {
+    padding: 30px 10px; /* Reduced padding for mobile */
+  }
+
+  .text-section {
+    font-size: 0.9rem; /* Adjust text size for mobile */
     padding: 1rem;
-    text-align: center;
   }
 
-  .social-icons img {
-    width: 24px;
-    height: 24px;
+  .images {
+    max-width: 100%; /* Allow images to scale */
+    margin-bottom: 20px;
   }
 
-  /* BUTTONS (if any) */
-  button, .btn-link {
-    width: 100%;
-    font-size: 14px;
-    padding: 12px;
-    box-sizing: border-box;
+  .books ul {
+    padding-left: 15px;
+    font-size: 1rem; /* Adjust list items for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5rem; /* Smaller title on extra small screens */
+  }
+
+  .section {
+    flex-direction: column; /* Stack elements vertically */
+  }
+
+  .text-section {
+    font-size: 1rem; /* Make text size a bit bigger for readability */
+    padding: 1.5rem;
+  }
+
+  .images {
+    max-width: 100%;
+    margin-bottom: 20px;
   }
 }
