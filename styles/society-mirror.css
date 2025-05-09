@@ -11,7 +11,7 @@ body {
   background-color: #fafafa;
   line-height: 1.7;
   overflow-x: hidden;
-  font-size: large;
+  font-weight: normal;
 }
 
 /* Navigation */
@@ -87,7 +87,7 @@ header p {
   text-align: justify;
   flex-direction: column;
   justify-content: center;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .section h2 {
@@ -272,10 +272,11 @@ footer p {
 
   .text-section {
     font-size: 0.1rem; /* Adjust text size for mobile */
-    padding: 0.2rem 0.2rem;
+    padding: 0.3rem 0.5rem;
     word-spacing: -0.15em;
-    line-height: 0.5;
+    line-height: 1.1;
     text-align: left;
+    font-weight: normal;
   }
 
   .images {
@@ -308,8 +309,9 @@ footer p {
     font-size: 0.25rem; /* Make text size a bit bigger for readability */
     padding: 0.2rem 0.2rem;
     word-spacing: -0.15em;
-    line-height: 0.5;
+    line-height: 1.0;
     text-align: left;
+    font-weight: normal;
   }
 
   .images {
