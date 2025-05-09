@@ -272,7 +272,7 @@ footer p {
   }
 
   .text-section {
-    font-size: 0.1rem; /* Adjust text size for mobile */
+    font-size: 0.3rem; /* Adjust text size for mobile */
     padding: 0.2rem 0.4rem;
     word-spacing: -0.15em;
     line-height: 1.3;
