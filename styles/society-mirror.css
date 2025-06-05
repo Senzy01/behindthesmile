@@ -171,6 +171,50 @@ header p {
   margin-bottom: 12px;
 }
 
+/* For THE-STILL-ROOM */
+    /* Thought Display Styling */
+    .thought-section {
+      max-width: 800px;
+      margin: 80px auto;
+      background-color: #fff;
+      border-radius: 15px;
+      padding: 40px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .thought {
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin-bottom: 30px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .btn-group {
+      margin-bottom: 20px;
+    }
+
+    .emoji-btn {
+      font-size: 1.4rem;
+      border: none;
+      background: none;
+      cursor: pointer;
+      margin: 0 5px;
+    }
+
+    .tagline {
+      text-align: center;
+      font-size: 1.2rem;
+      font-style: italic;
+      color: #777;
+      margin-bottom: 0px;
+    }
+
 /* Book List */
 .books {
   padding: 60px;
